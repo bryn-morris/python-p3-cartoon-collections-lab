@@ -9,11 +9,17 @@ def long_planeteer_calls(list_of_calls):
     
     return any(i>=5 for i in [len(eachCall) for eachCall in list_of_calls])   
 
+def find_the_cheese(list_of_strings):
 
+    cheese_types = ["cheddar","gouda", "camembert"]
+    
+    for eachCheese in list_of_strings:
+        if eachCheese in cheese_types:
+            return(eachCheese)
+    return None
 
-def find_the_cheese():
-    pass
 
 #The Testing List
 
-long_planeteer_calls(["dog", "goatt", "top"])
+find_the_cheese(["bbb","duck"])
+
