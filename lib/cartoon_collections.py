@@ -7,11 +7,7 @@ def summon_captain_planet(planateer_calls_list):
 
 def long_planeteer_calls(list_of_calls):
     
-    length_list = [len(eachCall) for eachCall in list_of_calls]
-
-    
-    return (if length_list)
-        
+    return any(i>=5 for i in [len(eachCall) for eachCall in list_of_calls])   
 
 
 
@@ -20,4 +16,4 @@ def find_the_cheese():
 
 #The Testing List
 
-long_planeteer_calls(["dog", "go", "top"])
+long_planeteer_calls(["dog", "goatt", "top"])
